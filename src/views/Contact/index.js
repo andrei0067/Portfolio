@@ -5,7 +5,6 @@ import Box from "@mui/material/Box";
 import {makeStyles} from "@mui/styles";
 import {Button, Container, Divider} from "@mui/material";
 import {motion} from "framer-motion";
-import {RemoveScrollBar} from "react-remove-scroll-bar";
 
 const useStyles = makeStyles({
     getintouchStyle: {
@@ -24,8 +23,7 @@ const useStyles = makeStyles({
         paddingBottom: '1rem',
         color: 'white !important',
         fontFamily: 'Raleway, sans-serif',
-        letterSpacing: '1px',
-        marginLeft:'5px',
+        letterSpacing: '1px !important',
         textAlign:'center'
     },
 });
@@ -43,17 +41,13 @@ export default function Contact() {
                         <h2 className={classes.getintouchStyle}>
                             Get In Touch
                         </h2>
-                    <p className={classes.pStyle}>
-                        I am actively seeking a front-end developer position and am open to any available opportunities.
-                        If you have any
+                    <Typography className={classes.pStyle}>
+                        I am actively seeking a front-end developer position and am open to any available opportunities. If you have any queries or would like
                         <br/>
-                        queries or would like to get in touch, please feel
+                        to get in touch, please feel free to contact me via
                         <br/>
-                        free to contact me via my inbox,
-                        and I will
-                        <br/>
-                        reply at my earliest convenience.
-                    </p>
+                        and I will reply at my earliest convenience.
+                    </Typography>
                     <motion.div
                         initial={{x: 1200}}
                         animate={{x: 0}}
@@ -80,8 +74,8 @@ export default function Contact() {
                 </Container>
                 <Container maxWidth='xl'>
                     <Divider sx={{borderColor: 'white', marginTop: '11rem', opacity: '.50'}}/>
-                    <Typography sx={{textAlign: 'center', color: 'white', fontSize: '12px', marginTop: '10px'}}>©
-                        Copyright 2023.</Typography>
+                    <Typography sx={{textAlign: 'center', color: 'white', fontSize: '12px', marginTop: '10px'}}>
+                        © Copyright 2023.</Typography>
                     <Typography sx={{textAlign: 'center', color: 'white', fontSize: '12px', marginTop: '10px'}}>
                         Designed & Built by Andrei Sirbu</Typography>
                 </Container>
